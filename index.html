@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Unlock My Card</title>
+<style>
+body{
+font-family:Arial;
+text-align:center;
+margin-top:100px;
+}
+
+#card{
+display:none;
+border:1px solid black;
+padding:20px;
+width:250px;
+margin:auto;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Mở khóa danh thiếp</h2>
+<p>Câu hỏi: 5 + 7 = ?</p>
+
+<input id="answer">
+<button onclick="check()">Trả lời</button>
+
+<div id="card">
+<h3>Ryan Đỗ</h3>
+<p>Phone: 09xxxxxxxx</p>
+<p>Email: example@gmail.com</p>
+</div>
+
+<script>
+function check(){
+let a=document.getElementById("answer").value;
+
+if(a==12){
+document.getElementById("card").style.display="block";
+}else{
+alert("Sai rồi, thử lại.");
+}
+}
+</script>
+
+</body>
+</html>
